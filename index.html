@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <title>Willa Pola</title>
+       <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <nav>
+        <img src="logo.png" id="logo">
+      
+        <ul>
+          <li>Strona Główna</li>
+          <li>Zdjęcia</li>
+          <li>Dane</li>
+          <li>Rzuty Techniczne</li>
+        </ul>
+      </nav>
+      <div class="big-image">
+        <div class="overlay">
+          <h1>Willa Pola</h1>
+          <p>Zagrzeb, Chorwacja</p>
+        </div>
+      </div>
+      
+      <div class="motto">
+        <h2>Jakiś tekst</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur iure sint, laboriosam dolores animi ad
+          voluptate harum esse vel quam, adipisci minima quia corporis nulla quos nobis debitis ut. Iure?
+        </p>
+      </div>
+      
+     
+      <footer>
+        &copy; 2022
+      </footer>
+            
+      <script>
+        const nav = document.querySelector('nav');
+        window.onscroll = function(){scrollFunction()};
+        function scrollFunction(){
+          if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30){
+            nav.classList.add('scroll');
+            document.getElementById('logo').style.width = "150px";}
+          else{
+            nav.classList.remove('scroll');
+            document.getElementById('logo').style.width = "200px";}
+};
+      
+
+        
+
+      </script>
+    </body>
+</html>
