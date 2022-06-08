@@ -9,17 +9,34 @@
       <nav>
         <img src="logo.png" id="logo">
       
-        <ul>
+        <ul id="menu1">
           <li>Strona Główna</li>
           <li>Zdjęcia</li>
           <li>Dane</li>
           <li>Rzuty Techniczne</li>
         </ul>
+        <div id="mobilenav"></div>
+        <div id="menubtn" onclick="toggleMobileMenu(this)" >
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+        
+        <div class="mobile-menu">
+          <ul class="menu__box" id="menubox">
+            <li><a class="menu__item" href="#">Strona Główna</a></li>
+            <li><a class="menu__item" href="#">Zdjęcia</a></li>
+            <li><a class="menu__item" href="#">Dane</a></li>
+            <li><a class="menu__item" href="#">Rzuty Techniczne</a></li>
+          </ul>
+        </div>
       </nav>
+      
       <div class="big-image">
         <div class="overlay">
           <h1>Willa Pola</h1>
           <p>Zagrzeb, Chorwacja</p>
+          <button onclick="toggleMobileMenu(this)" onclick="myFunction(this)">ELOOO</button>
         </div>
       </div>
       
@@ -37,6 +54,17 @@
       </footer>
             
       <script>
+        function toggleMobileMenu(menu) {
+          var element = document.getElementById("menubox");
+          if (element.classList.contains('open')) {
+                element.classList.remove("open")
+          }
+          else{
+            element.classList.add("open")
+          }
+          menu.classList.toggle("change");
+          ;}
+
         const nav = document.querySelector('nav');
         window.onscroll = function(){scrollFunction()};
         function scrollFunction(){
