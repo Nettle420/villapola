@@ -23,6 +23,8 @@ html { font-family: 'Inter', sans-serif; }
   gap: 2em;
   box-sizing: border-box;
   align-items: normal!important;
+  padding-top: 20px;
+  padding-bottom: 20px;
 
 }
 
