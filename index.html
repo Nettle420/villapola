@@ -11,8 +11,8 @@
         <img src="logo.png" id="logo">
       
         <ul id="menu1" class="menu">
-          <li class="current"><a href="#" data-hover="Home">Home</a></li>
-          <li><a href="#" data-hover="Galeria">Galeria</a></li>
+          <li class="current"><a href="index.html" data-hover="Home">Home</a></li>
+          <li><a href="galeria.html" data-hover="Galeria">Galeria</a></li>
           <li><a href="#" data-hover="Dane">Dane</a></li>
           <li><a href="#" data-hover="Rzuty Techniczne">Rzuty Techniczne</a></li>
         </ul>
@@ -77,13 +77,14 @@
 
       </div>
 
-      <div class="margin"></div>
+     
         <section class="parallax">
           <div class="parallax-inner">
             <h1>Galeria</h1>
-            <a class="galeriabtn"> GALERIA (LINK)</a>
+            <a class="galeriabtn" href="galeria.html"> Zobacz</a>
           </div>
         </section>
+        
      
       <footer>
         <h2> Kontakt </h2>
@@ -94,39 +95,6 @@
         </ul>
         &copy; 2022
       </footer>
-            
-      <script>
-        function toggleMobileMenu(menu) {
-          var element = document.getElementById("menubox");
-          if (element.classList.contains('open')) {
-                element.classList.remove("open")
-          }
-          else{
-            element.classList.add("open")
-          }
-          menu.classList.toggle("change");;}
-
-        const nav = document.querySelector('nav');
-        window.onscroll = function(){scrollFunction()};
-        function scrollFunction(){
-          if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30){
-            nav.classList.add('scroll');
-            document.getElementById('logo').style.width = "150px";}
-          else{
-            nav.classList.remove('scroll');
-            document.getElementById('logo').style.width = "200px";}
-
-
-          if (window.innerWidth <= 600) {
-            nav.classList.add('mobile'); }
-          else{
-            nav.classList.remove('mobile');
-          }};
-            
-          
-
-        
-
-      </script>
+      <script src="script.js"></script>
     </body>
 </html>

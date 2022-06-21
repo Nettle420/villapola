@@ -1,0 +1,82 @@
+<html>
+    <head>
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <title>Villa Pola</title>
+       <link rel="stylesheet" href="style.css">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+      <nav style="background-color: #ffffff00;">
+        <img src="logo.png" id="logo">
+      
+        <ul id="menu1" class="menu">
+          <li><a href="index.html" data-hover="Home">Home</a></li>
+          <li class="current" ><a href="galeria.html" data-hover="Galeria">Galeria</a></li>
+          <li><a href="#" data-hover="Dane">Dane</a></li>
+          <li><a href="#" data-hover="Rzuty Techniczne">Rzuty Techniczne</a></li>
+        </ul>
+        <div id="menubtn" onclick="toggleMobileMenu(this)" >
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+        
+        <div class="mobile-menu">
+          <ul class="menu__box" id="menubox">
+            <li><a class="menu__item" href="#">Strona Główna</a></li>
+            <li><a class="menu__item" href="#">Zdjęcia</a></li>
+            <li><a class="menu__item" href="#">Dane</a></li>
+            <li><a class="menu__item" href="#">Rzuty Techniczne</a></li>
+
+          </ul>
+        </div>
+      </nav>
+    
+      <section class="parallax2">
+        <div class="parallax-inner2">
+          <h1>Galeria</h1>
+        </div>
+      </section>
+      <section class="galleriatxt1">
+        <div class="galeriatxt">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the
+          </p>
+        </div>
+      </section>
+         
+
+      <div class="Gallery">
+        <!-- filter Items -->
+        <div class="navGaleria">
+          <a class="list active" data-filter="Wszystkie">Wszystkie</a>
+          <a class="list" data-filter="Kuchnia">Kuchnia</a>
+          <a class="list" data-filter="Łazienka">Łazienka</a>
+          <a class="list" data-filter="Sypialnia">Sypialnia</a>
+          <div class="dot"></div>
+        </div>
+        <!-- filter Images -->
+        <div class="Gallery_img">
+          <div class="image" data-filter="Kuchnia"><span><img src="galeria.jpg" alt=""></span></div>
+          <div class="image" data-filter="Kuchnia"><span><img src="galeria.jpg" alt=""></span></div>
+          <div class="image" data-filter="Kuchnia"><span><img src="galeria.jpg" alt=""></span></div>
+          <div class="image" data-filter="Kuchnia"><span><img src="galeria.jpg" alt=""></span></div>
+          <div class="image" data-filter="Łazienka"><span><img src="galeria.jpg" alt=""></span></div>
+          <div class="image" data-filter="Łazienka"><span><img src="galeria.jpg" alt=""></span></div>
+          <div class="image" data-filter="Sypialnia"><span><img src="galeria.jpg" alt=""></span></div>
+          <div class="image" data-filter="Sypialnia"><span><img src="galeria.jpg" alt=""></span></div>
+        </div>
+      </div>
+      <footer>
+        <h2> Kontakt </h2>
+        <ul class="kontakt-list">
+          <li><i class="fa fa-map-marker" style="font-size:18px"></i> ul. Jadranska, Rogoznica, Chorwacja</li>   <!-- IKONA LOKALIZACJI-->
+          <li><i class="fa fa-phone" style="font-size:18px"></i> <a href="tel:+48000000000">+48000000000</a></li>  <!-- IKONA TELEFONU-->
+          <li><i class="fa fa-envelope" style="font-size:18px"></i> <a href="mailto:info@info.com">E-mail: ...</a></li> <!-- IKONA MAILA-->
+        </ul>
+        &copy; 2022
+      </footer>
+      <script src="script.js"></script>
+      </script>
+    </body>
+</html>
